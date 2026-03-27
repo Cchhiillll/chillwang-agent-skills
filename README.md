@@ -2,33 +2,42 @@
 
 Public skill library for chillwang's Agent-first workflows.
 
-This repository stores reusable skills extracted from real project work, content workflows, and product practice.
+This repository collects reusable skills extracted from real project work, content workflows, product practice, and AI Native execution patterns.
 
-## Current skills
+## Skill Map
 
-### blog/agent-cli-blog-publishing
-A CLI-first blog publishing skill for code-driven websites.
+### Blog
+- [`blog/agent-cli-blog-publishing`](./blog/agent-cli-blog-publishing)
+  - Publish high-quality blog posts to a code-driven site through CLI + agent collaboration
+  - Includes workflow reference, blog publishing spec, and reusable article templates
 
-Use it when:
-- blog posts live directly in the repo
-- there is no CMS or admin backend
-- publishing happens through agent collaboration + Git
-- you want a repeatable workflow for drafting, validating, and publishing high-quality posts
+## Repository structure
 
-Includes:
-- `SKILL.md` — core workflow
-- `references/workflow.md` — end-to-end publishing sequence
-- `references/blog-publishing-spec.md` — schema, tone, and publishing checks
-- `references/article-templates.md` — reusable article structures
+```text
+chillwang-agent-skills/
+  blog/
+  content/
+  workflow/
+  product/
+  openclaw/
+```
 
-## Philosophy
+Not every category is populated yet. This structure is meant to keep future skills organized as the library grows.
 
-These skills are not abstract demos. They are distilled from workflows already used in real work:
-- product planning
-- content production
-- static-site publishing
-- Agent-first collaboration
+## Design principles
+
+These skills are built from real work rather than abstract demos.
+
+They should be:
+- reusable
+- procedural
+- grounded in actual workflows
+- easy to inspect, fork, and evolve
+
+## Current focus
+
+The first public skill in this repository captures a CLI-first blog publishing workflow for static websites where content lives directly in the codebase.
 
 ## License
 
-MIT unless otherwise noted.
+MIT
